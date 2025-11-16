@@ -1,0 +1,290 @@
+/* ---------- ESTILO GERAL (PADRÃO DO SITE PRINCIPAL) ---------- */
+body {
+  background-color: #0d0d0d;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  color: #e4e4e4;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- MENU FIXO (SEM A LINHA AZUL) ---------- */
+.menu {
+  background-color: #121212;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+.menu h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
+.menu h2 {
+  margin: 5px 0;
+  font-weight: 400;
+  font-size: 1.2em;
+  color: #cfcfcf;
+}
+
+/* ---------- CONTAINER ---------- */
+.container {
+  background: #1a1a1a;
+  width: 96%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.05);
+}
+
+/* ---------- BANNER ---------- */
+.banner {
+  width: 100%;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.35;
+  filter: blur(2px);
+}
+
+/* ---------- DESTAQUE ---------- */
+.destaque {
+  background: #222;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+/* ---------- TEXTO ---------- */
+.texto-destaque {
+  flex: 1;
+}
+.texto-destaque h3 {
+  color: #00c3ff;
+  margin-bottom: 10px;
+}
+
+/* ---------- REPRESENTANTE ---------- */
+.representante {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.representante img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 3px solid #00c3ff;
+  object-fit: cover;
+  box-shadow: 0 0 15px #00c3ff50;
+  transition: transform .3s, box-shadow .3s;
+}
+.representante img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px #00c3ff;
+}
+.representante p {
+  font-weight: 900;
+  color: #ddd;
+}
+
+/* ---------- GALERIA ---------- */
+.galeria {
+  margin-top: 40px;
+}
+.galeria h3 {
+  color: #00c3ff;
+  margin-bottom: 15px;
+  font-size: 1.6em;
+  border-left: 4px solid #00c3ff;
+  padding-left: 10px;
+}
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+.grid-galeria img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform .3s ease;
+}
+.grid-galeria img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== IMAGEM DA CALCULADORA ===== */
+.foto-calculadora {
+  width: 700px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #00c3ff50;
+  transition: transform .3s;
+}
+.foto-calculadora:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #00c3ff;
+}
+
+/* ---- EFEITO RGB NAS IMAGENS ---- */
+.rgb-gamer {
+  border-radius: 12px;
+  border: 3px solid transparent;
+  animation: rgbPulse 4s linear infinite;
+  box-shadow: 0 0 15px #00c3ff50;
+}
+
+/* ===== GALERIA + BOTÃO LADO A LADO ===== */
+.galeria-aplicacoes {
+  display: right;
+  vertical-align: right;
+  gap: 35px;
+  margin-top: 20px;
+}
+
+/* botão com efeito neon */
+.aplicacoes-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.grid-galeria {
+  display: flex;
+  gap: 20px;
+}
+
+.grid-galeria img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.btn-codigos {
+  background-color: #00c3ff;
+  color: #000;
+  padding: 15px 28px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: .3s ease;
+  box-shadow: 0 0 15px #00c3ff90;
+}
+
+.btn-codigos:hover {
+  background-color: #00eaff;
+  transform: scale(1.08);
+  box-shadow: 0 0 25px #00c3ff;
+}
+
+/* ---------- SEÇÃO DE TÓPICOS ---------- */
+.topicos {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 12px;
+  margin: 30px auto;
+  width: 96%;
+  box-shadow: 0 0 10px rgba(255,255,255,0.05);
+}
+.topico-box {
+  background: #222;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.topico-box h3 {
+  color: #00c3ff;
+  margin-bottom: 10px;
+  font-size: 1.6em;
+}
+.topico-box p {
+  line-height: 1.6em;
+  color: #ddd;
+  font-size: 1.1em;
+}
+
+/* ---------- RODAPÉ ---------- */
+footer {
+  background-color: #0d0d0d;
+  color: #aaa;
+  text-align: center;
+  padding: 15px 0;
+  border-top: 1px solid #222;
+}
+
+/* ---------- RESPONSIVIDADE ---------- */
+@media (max-width: 900px) {
+  .galeria-aplicacoes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn-codigos {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu h1 { font-size: 1.4em; }
+  .menu h2 { font-size: 1em; }
+
+  .destaque {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .representante img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu h1 { font-size: 1.2em; }
+  .menu h2, .menu p { display: none; }
+
+  .representante img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-galeria img {
+    height: 140px;
+  }
+
+  .representante img {
+    width: 110px;
+    height: 110px;
+  }
+
+  h3 {
+    font-size: 1.3em;
+  }
+
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+}
